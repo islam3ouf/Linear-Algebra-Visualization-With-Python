@@ -1,137 +1,285 @@
-# 01 - Vector Visualization
+<div align="center">
 
-## 📖 Overview
+# 🎨 Linear Algebra Visualization with Python
 
-This project is the first step in my **Linear Algebra Visualization with Python** journey, inspired by the **3Blue1Brown – Essence of Linear Algebra** series.
+### 📐 Visualizing Linear Algebra Concepts Using Python, NumPy & Matplotlib
 
-The purpose of this project is to build an intuitive understanding of vectors by representing them visually in a two-dimensional coordinate system using Python.
+<p align="center">
+<img src="animations/vector_operations.gif" width="750">
+</p>
 
-Instead of treating vectors as abstract lists of numbers, this project demonstrates them as geometric objects with magnitude and direction, helping bridge the gap between mathematical theory and visual intuition.
-
----
-
-## 🎯 Objectives
-
-- Understand what a vector represents.
-- Visualize vectors in the Cartesian plane.
-- Learn how vector components determine direction and magnitude.
-- Practice plotting vectors using Python.
-- Build a foundation for future Linear Algebra visualizations.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-## ✨ Features
+*A visual approach to understanding Linear Algebra through high-quality static and animated visualizations.*
 
-- Static vector visualization.
-- Animated vector visualization.
-- Coordinate grid and axes.
-- Labeled vector components.
-- Adjustable vector values.
-- High-quality exported figures.
-- GIF animation support.
+</div>
 
 ---
 
-## 📂 Project Structure
+# 📖 Overview
+
+This project demonstrates the most fundamental vector operations in **Linear Algebra** through beautiful and intuitive visualizations.
+
+Instead of only reading formulas, learners can **see** how vectors behave on the coordinate plane.
+
+This project currently includes:
+
+- ➕ Vector Addition
+- ✖️ Scalar Multiplication
+
+Both concepts are implemented in:
+
+- 📷 Static Visualization
+- 🎬 Animated Visualization
+
+---
+
+# 🎥 Preview
+
+## Animated Visualization
+
+<p align="center">
+
+<img src="animations/vector_operations.gif" width="750">
+
+</p>
+
+---
+
+## Static Visualization
+
+<p align="center">
+
+<img src="images/static_vector_visualization.png" width="750">
+
+</p>
+
+---
+
+# ✨ Features
+
+## 📊 Static Visualization
+
+- Clean vector drawing
+- Coordinate system
+- Grid visualization
+- Tail-to-head representation
+- Parallelogram rule
+- Vector labels
+- Magnitude comparison
+- Professional dark theme
+
+---
+
+## 🎬 Animated Visualization
+
+- Smooth vector drawing
+- Step-by-step explanation
+- Tail-to-head animation
+- Vector addition animation
+- Scalar multiplication animation
+- Fade transitions
+- Educational annotations
+- Automatic GIF generation
+
+---
+
+# 🧠 Mathematical Concepts
+
+This project demonstrates:
+
+- Cartesian Coordinates
+- Vectors
+- Vector Components
+- Vector Addition
+- Tail-to-Head Rule
+- Parallelogram Rule
+- Scalar Multiplication
+- Coordinate Geometry
+
+---
+
+# 🛠 Technologies
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| NumPy | Vector Mathematics |
+| Matplotlib | Visualization |
+| Pillow | GIF Export |
+
+---
+
+# 📂 Project Structure
 
 ```text
 01-Vector-Visualization/
 │
 ├── README.md
 ├── requirements.txt
+│
 ├── static_vector_visualization.py
 ├── animated_vector_visualization.py
 │
-├── assets/
-│   ├── screenshots/
-│   └── gifs/
-│
 ├── notebooks/
-│   └── vector_visualization.ipynb
+│   ├── static_vector_visualization.ipynb
+│   └── animated_vector_visualization.ipynb
 │
-└── outputs/
+├── images/
+│   └── static_vector_visualization.png
+│
+└── animations/
+    └── vector_operations.gif
 ```
 
 ---
 
-## 🛠 Technologies
+# ⚙ Installation
 
-- Python
-- NumPy
-- Matplotlib
+Clone the repository
 
----
+```bash
+git clone https://github.com/islam3ouf/Linear-Algebra-Visualization-With-Python.git
+```
 
-## 🚀 How to Run
+Move to the project
 
-Install the required packages:
+```bash
+cd Linear-Algebra-Visualization-With-Python/01-Vector-Visualization
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the static visualization:
+---
+
+# 📦 Requirements
+
+```
+numpy
+matplotlib
+Pillow
+```
+
+or
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶ Running the Project
+
+## Static Visualization
 
 ```bash
 python static_vector_visualization.py
 ```
 
-Run the animated visualization:
+---
+
+## Animated Visualization
 
 ```bash
 python animated_vector_visualization.py
 ```
 
----
+After execution, the animation will automatically generate:
 
-## 📸 Output
-
-The generated images and animations can be found in:
-
-- `assets/screenshots/`
-- `assets/gifs/`
-- `outputs/`
+```
+vector_operations.gif
+```
 
 ---
 
-## 📚 Concepts Covered
+# 📚 Learning Objectives
 
-- Cartesian Coordinate System
-- Position Vectors
-- Magnitude
-- Direction
-- Vector Components
-- Unit Grid Visualization
+By completing this project, you will understand:
 
----
+✔ Vector representation
 
-## 🎓 Learning Outcome
+✔ Coordinate systems
 
-After completing this project, you should be able to:
+✔ Vector addition
 
-- Interpret vectors geometrically.
-- Plot vectors programmatically.
-- Understand vector magnitude and direction.
-- Prepare for vector addition, scalar multiplication, and linear combinations.
+✔ Scalar multiplication
+
+✔ Tail-to-head method
+
+✔ Parallelogram rule
+
+✔ Mathematical visualization
 
 ---
 
-## 📌 Future Improvements
+# 🚀 Roadmap
 
-- Interactive sliders
-- Multiple vectors
-- Vector labels
-- Dynamic colors
-- Angle visualization
-- Magnitude visualization
-- 3D vector support
+This project is part of a complete **Linear Algebra Visualization** series.
+
+Upcoming projects include:
+
+- ✅ Vector Visualization
+- ⬜ Vector Norm
+- ⬜ Unit Vector
+- ⬜ Dot Product
+- ⬜ Cross Product
+- ⬜ Angle Between Vectors
+- ⬜ Projection
+- ⬜ Linear Combination
+- ⬜ Span
+- ⬜ Linear Independence
+- ⬜ Basis
+- ⬜ Matrix Multiplication
+- ⬜ Matrix Transformation
+- ⬜ Determinant
+- ⬜ Eigenvalues
+- ⬜ Eigenvectors
+- ⬜ Singular Value Decomposition (SVD)
+- ⬜ Principal Component Analysis (PCA)
 
 ---
 
-## 🙏 Acknowledgments
+# 🤝 Contributing
 
-Inspired by:
+Contributions are welcome!
 
-**3Blue1Brown — Essence of Linear Algebra**
+If you have ideas for improving visualizations or adding new Linear Algebra concepts, feel free to open an Issue or submit a Pull Request.
 
-This implementation is an independent educational recreation built with Python for learning purposes.
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# ⭐ Support
+
+If you enjoyed this project and found it useful,
+
+please consider giving the repository a ⭐ on GitHub.
+
+It really helps the project grow and reach more learners.
+
+---
+
+<div align="center">
+
+## 👨‍💻 Author
+
+**Islam Ouff**
+
+Building beautiful mathematical visualizations with Python.
+
+Made with ❤️ and lots of ☕
+
+</div>
