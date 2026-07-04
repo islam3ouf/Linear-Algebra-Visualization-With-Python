@@ -1,40 +1,150 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
-# =========================
-# VECTORS
-# =========================
-v1 = np.array([2, 3])
-v2 = np.array([3, 1])
 
-sum_vector = v1 + v2
-scaled_vector = 2 * v1
+# COLORS
 
-# =========================
-# MAGNITUDES
-# =========================
-mag_v1 = np.linalg.norm(v1)
-mag_v2 = np.linalg.norm(v2)
-mag_sum = np.linalg.norm(sum_vector)
-mag_scaled = np.linalg.norm(scaled_vector)
+BACKGROUND_COLOR = "#111827"
 
-# =========================
-# FIGURE SETUP
-# =========================
-plt.style.use("dark_background")
+VECTOR_COLORS = {
+    "v1": "#00E5FF",
+    "v2": "#FFD54F",
+    "sum": "#00FF95",
+    "scaled": "#FF4D6D",
+}
 
-fig, ax = plt.subplots(figsize=(10, 10))
-ax.set_facecolor("#111827")
 
-# =========================
-# DRAW AXES
-# =========================
-ax.axhline(0, color="white", linewidth=1.5)
-ax.axvline(0, color="white", linewidth=1.5)
+# DRAWING FUNCTIONS
 
-# =========================
-# DRAW VECTORS
-# =========================
+def draw_vector(ax, vector, color, label):
+    """Draw a single vector with its endpoint and label."""
+
+    ax.quiver(
+        0,
+        0,
+        vector[0],
+        vector[1],
+        angles="xy",
+        scale_units="xy",
+        scale=1,
+        color=color,
+        width=0.008,
+    )
+
+    ax.scatter(
+        vector[0],
+        vector[1],
+        s=120,
+        color=color,
+        edgecolors="white",
+        zorder=5,
+    )
+
+    ax.text(
+        vector[0] + 0.2,
+        vector[1] + 0.2,
+        f"{label}\n({vector[0]}, {vector[1]})",
+        fontsize=11,
+        weight="bold",
+        color=color,
+    )
+
+
+def draw_parallelogram(ax, v1, v2, result):
+    """Draw the helper lines for vector addition."""
+
+    ax.plot(
+        [v1[0], result[0]],
+        [v1[1], result[1]],
+        "--",
+        color="gray",
+        alpha=0.6,
+    )
+
+    ax.plot(
+        [v2[0], result[0]],
+        [v2[1], result[1]],
+        "--",
+        color="gray",
+        alpha=0.6,
+    )
+
+
+def configure_axes(ax):
+    """Configure axes appearance."""
+
+    ax.set_xlim(-1, 11)
+    ax.set_ylim(-1, 11)
+
+    ax.axhline(0, color="white", linewidth=1.5)
+    ax.axvline(0, color="white", linewidth=1.5)
+
+    ax.grid(
+        linestyle=":",
+        linewidth=0.7,
+        alpha=0.5,
+    )
+
+    ax.set_xlabel("X-axis")
+    ax.set_ylabel("Y-axis")
+
+    ax.set_title(
+        "Vector Operations Visualization",
+        fontsize=18,
+        weight="bold",
+        pad=20,
+    )
+
+
+def create_legend(ax):
+
+    handles = [
+        Line2D([0], [0], color=VECTOR_COLORS["v1"], lw=4, label="v1"),
+        Line2D([0], [0], color=VECTOR_COLORS["v2"], lw=4, label="v2"),
+        Line2D([0], [0], color=VECTOR_COLORS["sum"], lw=4, label="v1 + v2"),
+        Line2D([0], [0], color=VECTOR_COLORS["scaled"], lw=4, label="2 × v1"),
+    ]
+
+    ax.legend(handles=handles, loc="lower right")
+
+
+# MAIN
+
+
+def main():
+
+    plt.style.use("dark_background")
+
+    fig, ax = plt.subplots(figsize=(10, 10))
+    ax.set_facecolor(BACKGROUND_COLOR)
+
+    v1 = np.array([2, 3])
+    v2 = np.array([3, 1])
+
+    vectors = [
+        (v1, VECTOR_COLORS["v1"], "v1"),
+        (v2, VECTOR_COLORS["v2"], "v2"),
+        (v1 + v2, VECTOR_COLORS["sum"], "v1 + v2"),
+        (2 * v1, VECTOR_COLORS["scaled"], "2 × v1"),
+    ]
+
+    configure_axes(ax)
+
+    for vector, color, label in vectors:
+        draw_vector(ax, vector, color, label)
+
+    draw_parallelogram(ax, v1, v2, v1 + v2)
+
+    create_legend(ax)
+
+    plt.tight_layout()
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()# =========================
 vectors = [
     (v1, "#00E5FF", "v1"),
     (v2, "#FFD54F", "v2"),
