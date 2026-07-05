@@ -1,152 +1,119 @@
-🗺️ Roadmap
+# 🗺️ Roadmap
 
-Welcome to the Linear Algebra Visualization with Python roadmap.
-
-This repository is a long-term educational project dedicated to making Linear Algebra intuitive through visualization. Every topic is explained using carefully designed Python code, high-quality animations, and mathematical illustrations.
-
-The roadmap progresses from fundamental vector concepts to advanced topics widely used in Artificial Intelligence, Machine Learning, Computer Vision, Robotics, Scientific Computing, and Computer Graphics.
+This repository is a long-term journey to visualize Linear Algebra with Python through animations, mathematical intuition, and interactive visualizations.
 
 ---
 
-📚 Learning Roadmap
+## 📈 Progress
 
-🟢 Foundations
-
-#| Project| Status
-01| Vector Visualization| ✅ Completed
-02| Linear Combinations, Span & Basis| 🚧 In Progress
-03| Matrix Transformations| ⏳ Planned
-04| Matrix Multiplication| ⏳ Planned
-05| Dot Product| ⏳ Planned
-06| Cross Product (3D)| ⏳ Planned
-07| Norms & Distance| ⏳ Planned
-08| Unit Vectors| ⏳ Planned
+- ✅ **Completed:** 1
+- 🚧 **In Progress:** 1
+- ⏳ **Planned:** 48
 
 ---
 
-🔵 Solving Linear Systems
+<details>
+<summary><b>🟢 Foundations (01–08)</b></summary>
 
-#| Project| Status
-09| Systems of Linear Equations| ⏳ Planned
-10| Gaussian Elimination| ⏳ Planned
-11| Row Echelon Form (REF)| ⏳ Planned
-12| Reduced Row Echelon Form (RREF)| ⏳ Planned
-13| Matrix Inverse| ⏳ Planned
-14| LU Decomposition| ⏳ Planned
+- ✅ 01. Vector Visualization
+- 🚧 02. Linear Combinations, Span & Basis
+- ⏳ 03. Matrix Transformations
+- ⏳ 04. Matrix Multiplication
+- ⏳ 05. Dot Product
+- ⏳ 06. Cross Product (3D)
+- ⏳ 07. Norms & Distance
+- ⏳ 08. Unit Vectors
 
----
+</details>
 
-🟣 Vector Spaces
+<details>
+<summary><b>🔵 Solving Linear Systems (09–14)</b></summary>
 
-#| Project| Status
-15| Linear Independence| ⏳ Planned
-16| Dimension| ⏳ Planned
-17| Column Space| ⏳ Planned
-18| Row Space| ⏳ Planned
-19| Null Space| ⏳ Planned
-20| Rank| ⏳ Planned
+- ⏳ 09. Systems of Linear Equations
+- ⏳ 10. Gaussian Elimination
+- ⏳ 11. Row Echelon Form (REF)
+- ⏳ 12. Reduced Row Echelon Form (RREF)
+- ⏳ 13. Matrix Inverse
+- ⏳ 14. LU Decomposition
 
----
+</details>
 
-🟡 Orthogonality
+<details>
+<summary><b>🟣 Vector Spaces (15–20)</b></summary>
 
-#| Project| Status
-21| Orthogonality| ⏳ Planned
-22| Orthogonal Projection| ⏳ Planned
-23| Gram-Schmidt Process| ⏳ Planned
-24| QR Decomposition| ⏳ Planned
-25| Least Squares| ⏳ Planned
+- ⏳ 15. Linear Independence
+- ⏳ 16. Dimension
+- ⏳ 17. Column Space
+- ⏳ 18. Row Space
+- ⏳ 19. Null Space
+- ⏳ 20. Rank
 
----
+</details>
 
-🔴 Matrix Analysis
+<details>
+<summary><b>🟡 Orthogonality (21–25)</b></summary>
 
-#| Project| Status
-26| Determinants| ⏳ Planned
-27| Eigenvalues| ⏳ Planned
-28| Eigenvectors| ⏳ Planned
-29| Matrix Diagonalization| ⏳ Planned
-30| Positive Definite Matrices| ⏳ Planned
-31| Singular Value Decomposition (SVD)| ⏳ Planned
-32| Jordan Form (Conceptual)| ⏳ Planned
+- ⏳ 21. Orthogonality
+- ⏳ 22. Orthogonal Projection
+- ⏳ 23. Gram–Schmidt Process
+- ⏳ 24. QR Decomposition
+- ⏳ 25. Least Squares
 
----
+</details>
 
-🟠 Applications
+<details>
+<summary><b>🔴 Matrix Analysis (26–32)</b></summary>
 
-#| Project| Status
-33| Principal Component Analysis (PCA)| ⏳ Planned
-34| Linear Regression| ⏳ Planned
-35| Linear Algebra for Machine Learning| ⏳ Planned
-36| Linear Algebra for Deep Learning| ⏳ Planned
-37| Computer Vision Transformations| ⏳ Planned
-38| Robotics Transformations| ⏳ Planned
-39| Computer Graphics| ⏳ Planned
-40| Affine Transformations| ⏳ Planned
+- ⏳ 26. Determinants
+- ⏳ 27. Eigenvalues
+- ⏳ 28. Eigenvectors
+- ⏳ 29. Matrix Diagonalization
+- ⏳ 30. Positive Definite Matrices
+- ⏳ 31. Singular Value Decomposition (SVD)
+- ⏳ 32. Jordan Form (Conceptual)
 
----
+</details>
 
-🔷 Advanced Topics
+<details>
+<summary><b>🟠 Applications (33–40)</b></summary>
 
-#| Project| Status
-41| Tensor Introduction| ⏳ Planned
-42| Kronecker Product| ⏳ Planned
-43| Block Matrices| ⏳ Planned
-44| Sparse Matrices| ⏳ Planned
-45| Matrix Calculus Basics| ⏳ Planned
-46| Numerical Stability| ⏳ Planned
-47| Markov Chains| ⏳ Planned
-48| Graph Laplacian| ⏳ Planned
+- ⏳ 33. Principal Component Analysis (PCA)
+- ⏳ 34. Linear Regression
+- ⏳ 35. Linear Algebra for Machine Learning
+- ⏳ 36. Linear Algebra for Deep Learning
+- ⏳ 37. Computer Vision Transformations
+- ⏳ 38. Robotics Transformations
+- ⏳ 39. Computer Graphics
+- ⏳ 40. Affine Transformations
 
----
+</details>
 
-🎨 Interactive Visualizations
+<details>
+<summary><b>🔷 Advanced Topics (41–48)</b></summary>
 
-#| Project| Status
-49| Interactive Plotly Visualizations| ⏳ Planned
-50| Interactive Linear Algebra Playground| ⏳ Planned
+- ⏳ 41. Tensor Introduction
+- ⏳ 42. Kronecker Product
+- ⏳ 43. Block Matrices
+- ⏳ 44. Sparse Matrices
+- ⏳ 45. Matrix Calculus Basics
+- ⏳ 46. Numerical Stability
+- ⏳ 47. Markov Chains
+- ⏳ 48. Graph Laplacian
 
----
+</details>
 
-🎯 Ultimate Goal
+<details>
+<summary><b>🎨 Interactive Visualizations (49–50)</b></summary>
 
-Create one of the most comprehensive open-source repositories for visual learning of Linear Algebra with Python.
+- ⏳ 49. Interactive Plotly Visualizations
+- ⏳ 50. Interactive Linear Algebra Playground
 
-Each project will include:
-
-- 📖 Mathematical intuition
-- 🧠 Clear explanations
-- 🐍 Clean Python implementation
-- 🎞️ High-quality animations
-- 📊 Static visualizations
-- 🎥 GIF demonstrations
-- 📓 Jupyter Notebook version
-- 📄 Detailed documentation
-- 🌍 Real-world applications
-- 🚀 Well-organized GitHub structure
+</details>
 
 ---
 
-👨‍💻 Target Audience
+# 🎯 Vision
 
-- Students
-- Self-Learners
-- Educators
-- Data Scientists
-- Machine Learning Engineers
-- AI Engineers
-- Computer Vision Engineers
-- Robotics Engineers
-- Scientific Computing Enthusiasts
+Build one of the world's best open-source repositories for learning **Linear Algebra through Python visualizations**, covering everything from basic vectors to modern AI applications.
 
----
-
-🌟 Vision
-
-The goal is not only to teach formulas, but to help learners see Linear Algebra.
-
-By combining mathematics with visualization, this repository aims to make abstract concepts intuitive, engaging, and accessible to everyone.
-
----
-
-⭐ This roadmap will continue evolving as new visualization projects are added.
+⭐ New projects will continue to be added as the repository grows.
