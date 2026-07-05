@@ -1,39 +1,109 @@
-# 𝐋𝐢𝐧𝐞𝐚𝐫 𝐀𝐥𝐠𝐞𝐛𝐫𝐚 𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 𝐰𝐢𝐭𝐡 𝐏𝐲𝐭𝐡𝐨𝐧
-
+# 🧮 Linear Algebra Visualization with Python
 
 <p align="left">
-  <img src="assets/logo.png" width="90">
+  <img src="assets/logo.png" alt="Logo" width="90">
 </p>
-
-
-
 
 <p align="center">
   <img src="assets/banner.PNG" alt="Linear Algebra Visualization Banner" width="100%">
 </p>
-> Interactive visualizations and animations of Linear Algebra concepts using Python, NumPy, and Matplotlib, inspired by the legendary **3Blue1Brown – Essence of Linear Algebra** series.
 
-## 📖 About
+<p align="center">
+  <strong>Interactive visualizations and animations of Linear Algebra concepts using Python.</strong><br>
+  Inspired by the legendary <strong>3Blue1Brown – Essence of Linear Algebra</strong> series.
+</p>
 
-This repository documents my journey through the **Essence of Linear Algebra** series by **3Blue1Brown**.
-
-The goal is not only to understand the mathematics behind Linear Algebra, but also to recreate its concepts using Python through interactive visualizations, animations, and simulations.
-
-Every topic is implemented from scratch to build both mathematical intuition and practical programming skills.
-
----
-
-## 🎯 Objectives
-
-- Develop a deep intuition for Linear Algebra.
-- Visualize abstract mathematical concepts.
-- Build educational Python projects.
-- Improve Python, NumPy, and Matplotlib skills.
-- Create an open-source educational resource.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" />
+  <img src="https://img.shields.io/badge/NumPy-Latest-013243?logo=numpy" />
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-orange" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+</p>
 
 ---
 
-## 🛠️ Technologies
+# 📖 About
+
+This repository is a long-term educational project focused on learning **Linear Algebra through visualization**.
+
+Each concept is implemented from scratch using Python to transform mathematical theory into intuitive animations, diagrams, and educational simulations.
+
+The objective is not only to understand the mathematics but also to build strong programming skills by recreating every concept visually.
+
+---
+
+# ✨ Features
+
+- 📊 High-quality mathematical visualizations
+- 🎞️ Animated demonstrations
+- 🐍 Clean Python implementations
+- 📖 Well-documented projects
+- 🧠 Intuitive explanations
+- 📈 Progressive learning roadmap
+- 🌍 Open-source educational resource
+
+---
+
+# 📂 Repository Structure
+
+```text
+Linear-Algebra-Visualization-With-Python/
+│
+├── 01-Vector-Visualization/
+├── 02-Linear-Combinations-Span-Basis/
+├── 03-Matrix-Transformations/
+├── ...
+│
+├── assets/
+│   ├── logo.png
+│   ├── banner.png
+│   └── previews/
+│
+├── docs/
+│   ├── images/
+│   └── references.md
+│
+├── README.md
+├── ROADMAP.md
+├── PROJECTS.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── CHANGELOG.md
+├── LICENSE
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
+# 🚀 Learning Roadmap
+
+The complete learning roadmap is available here:
+
+➡️ **[ROADMAP.md](ROADMAP.md)**
+
+Follow the repository from vector fundamentals to advanced Linear Algebra applications in Artificial Intelligence, Machine Learning, Computer Vision, Robotics, and Scientific Computing.
+
+---
+
+# 📚 Projects
+
+A complete list of current and upcoming projects can be found in:
+
+➡️ **[PROJECTS.md](PROJECTS.md)**
+
+Each project includes:
+
+- 📖 Documentation
+- 🐍 Python source code
+- 📊 Static visualization
+- 🎞️ Animated visualization
+- 🖼️ Preview GIF
+
+---
+
+# 🛠️ Technologies
 
 - Python
 - NumPy
@@ -42,106 +112,100 @@ Every topic is implemented from scratch to build both mathematical intuition and
 
 ---
 
-## 📚 Topics
+# 📸 Preview
 
-- [ ] Vectors
-- [ ] Vector Addition
-- [ ] Scalar Multiplication
-- [ ] Linear Combinations
-- [ ] Span
-- [ ] Basis
-- [ ] Linear Independence
-- [ ] Dot Product
-- [ ] Cross Product
-- [ ] Matrices
-- [ ] Matrix Multiplication
-- [ ] Linear Transformations
-- [ ] Determinants
-- [ ] Inverse Matrices
-- [ ] Systems of Linear Equations
-- [ ] Change of Basis
-- [ ] Eigenvectors & Eigenvalues
-- [ ] Final Projects
+Project previews and animations are available inside:
+
+```text
+assets/previews/
+```
+
+More visual demonstrations will be added as the repository grows.
 
 ---
 
-## 📂 Repository Structure
+# 🚀 Getting Started
 
-```
-Linear-Algebra-Visualization-With-Python/
-│
-├── source_code/
-├── assets/
-│   ├── images/
-│   ├── gifs/
-│   └── videos/
-├── notebooks/
-├── examples/
-├── docs/
-├── README.md
-├── LICENSE
-├── requirements.txt
-└── .gitignore
-```
-
----
-
-## 🚀 Getting Started
-
-Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/Linear-Algebra-Visualization-With-Python.git
+git clone https://github.com/islam3ouf/Linear-Algebra-Visualization-With-Python.git
 ```
 
-Install dependencies
+Navigate to the project:
+
+```bash
+cd Linear-Algebra-Visualization-With-Python
+```
+
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run any project
+Run any project:
 
 ```bash
-python source_code/project_name.py
+python project_folder/project_file.py
 ```
 
 ---
 
-## 🌟 Progress
+# 📖 Documentation
 
-This repository is continuously updated as I progress through the complete **Essence of Linear Algebra** course.
+Additional documentation is available in:
 
-New projects, animations, and visual explanations will be added regularly.
-
----
-
-## 🎥 Inspiration
-
-This project is inspired by:
-
-**3Blue1Brown — Essence of Linear Algebra**
-
-One of the greatest visual mathematics series ever created.
+- 📍 ROADMAP.md
+- 📍 PROJECTS.md
+- 📍 CONTRIBUTING.md
+- 📍 CODE_OF_CONDUCT.md
+- 📍 CHANGELOG.md
+- 📍 docs/references.md
 
 ---
 
-## 🤝 Contributions
+# 🎯 Objectives
 
-Suggestions, improvements, and pull requests are always welcome.
-
-If you have an idea for a better visualization, feel free to contribute.
+- Develop a strong intuition for Linear Algebra.
+- Visualize abstract mathematical concepts.
+- Build educational Python projects.
+- Improve Python programming skills.
+- Learn scientific visualization techniques.
+- Create a comprehensive open-source learning resource.
 
 ---
 
-## ⭐ Support
+# 🎓 Inspiration
+
+This repository is inspired by the outstanding educational work of:
+
+- **3Blue1Brown — Essence of Linear Algebra**
+- **MIT OpenCourseWare**
+- **Gilbert Strang**
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome.
+
+Whether it's fixing bugs, improving documentation, enhancing animations, or suggesting new visualizations, every contribution helps improve this educational project.
+
+Please read **CONTRIBUTING.md** before opening a Pull Request.
+
+---
+
+# ⭐ Support
 
 If you find this repository useful, consider giving it a ⭐ on GitHub.
 
-It helps the project reach more learners.
+Your support helps more learners discover this project.
 
 ---
 
-## 📜 License
+# 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for more information.
