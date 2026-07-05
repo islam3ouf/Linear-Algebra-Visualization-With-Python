@@ -1,4 +1,4 @@
-# Linear Algebra Visualization with Python
+# 𝐋𝐢𝐧𝐞𝐚𝐫 𝐀𝐥𝐠𝐞𝐛𝐫𝐚 𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 𝐰𝐢𝐭𝐡 𝐏𝐲𝐭𝐡𝐨𝐧
 
 
 <p align="left">
