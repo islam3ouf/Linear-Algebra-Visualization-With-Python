@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <img src="01-Vector-Visualization/animations/vector_operations.gif" width="85%">
+</p>
+
+<p align="center">
   <strong>Interactive visualizations and animations of Linear Algebra concepts using Python.</strong><br>
   Inspired by the legendary <strong>3Blue1Brown – Essence of Linear Algebra</strong> series.
 </p>
