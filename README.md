@@ -14,7 +14,7 @@
 
 <p align="center">
   <strong>Interactive visualizations and animations of Linear Algebra concepts using Python.</strong><br>
-  Inspired by the legendary <strong>3Blue1Brown – Essence of Linear Algebra</strong> series.
+  This project is an independent educational implementation inspired by the visual teaching style of the "Essence of Linear Algebra" series. It is not affiliated with or endorsed by 3Blue1Brown.</strong> series.
 </p>
 
 <p align="center">
