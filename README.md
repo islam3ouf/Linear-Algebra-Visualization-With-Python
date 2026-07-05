@@ -1,4 +1,13 @@
 # Linear Algebra Visualization with Python
+
+
+<p align="left">
+  <img src="assets/logo.png" width="180">
+</p>
+
+
+
+
 <p align="center">
   <img src="assets/banner.PNG" alt="Linear Algebra Visualization Banner" width="100%">
 </p>
