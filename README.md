@@ -1,13 +1,6 @@
+# Linear Algebra Visualization with Python
 <p align="center">
-  <img src="assets/logo.png" alt="Linear Algebra Visualization with Python" width="220">
-</p>
-
-<h1 align="center">
-Linear Algebra Visualization with Python
-</h1>
-
-<p align="center">
-Visualizing Linear Algebra concepts through Python animations and interactive graphics.
+  <img src="assets/banner.PNG" alt="Linear Algebra Visualization Banner" width="100%">
 </p>
 > Interactive visualizations and animations of Linear Algebra concepts using Python, NumPy, and Matplotlib, inspired by the legendary **3Blue1Brown – Essence of Linear Algebra** series.
 
