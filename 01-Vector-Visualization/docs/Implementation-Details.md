@@ -1,156 +1,282 @@
 # ⚙️ Implementation Details
 
-This document outlines the implementation strategy for the **Scalar Multiplication Visualization** project.
+This document explains the technical decisions behind the **Scalar Multiplication Visualization** implementation.
 
-The objective is to transform the mathematical concept of scalar multiplication into a clear, step-by-step visual animation that emphasizes how a scalar affects a vector's magnitude and direction.
-
----
-
-# 🎯 Objectives
-
-The visualization should help viewers understand:
-
-- What scalar multiplication means.
-- How a scalar changes a vector's magnitude.
-- How positive scalars preserve direction.
-- How negative scalars reverse direction.
-- Why multiplying by zero produces the zero vector.
+Rather than only describing *what* the code does, it explains *why* specific tools, libraries, and design choices were used throughout the project.
 
 ---
 
-# 🏗 Visualization Workflow
+# 🎯 Design Philosophy
 
-The animation is divided into several stages.
+The primary goal of this project is to create a visualization that is:
 
-## Stage 1 — Original Vector
+- Mathematically accurate
+- Easy to understand
+- Easy to maintain
+- Easy to extend
+- Visually clean
+- Educational
 
-Display the original vector starting from the origin.
-
-The viewer first observes the initial vector before any transformation is applied.
-
----
-
-## Stage 2 — Display the Scalar
-
-Present the scalar value currently being applied.
-
-Examples include:
-
-- 2
-- 0.5
-- -1
-- 0
-
-This helps establish the relationship between the scalar and the resulting transformation.
+Every implementation decision supports one or more of these goals.
 
 ---
 
-## Stage 3 — Apply Scalar Multiplication
+# 📦 Why NumPy?
 
-Animate the scaled vector growing from the origin.
+**NumPy** is the standard numerical computing library in Python.
 
-Each component is multiplied by the scalar:
+It was chosen because it provides:
 
-- Positive scalars stretch or shrink the vector.
-- Negative scalars additionally reverse its direction.
-- A zero scalar collapses the vector to the origin.
+- Fast mathematical operations
+- Clean vector calculations
+- Reliable numerical precision
+- Simple array manipulation
 
----
-
-## Stage 4 — Update Mathematical Expression
-
-Display the corresponding mathematical operation.
+Instead of manually multiplying coordinates, NumPy allows vector operations to remain concise and readable.
 
 Example:
 
-```
-2 × (2,3) = (4,6)
+```python
+scaled_vector = scalar * vector
 ```
 
-This reinforces the connection between the animation and the underlying mathematics.
+This closely matches the mathematical notation taught in Linear Algebra.
 
 ---
 
-## Stage 5 — Highlight the Transformation
+# 📊 Why Matplotlib?
 
-Explain the observed effect.
+Although several visualization libraries exist, **Matplotlib** is particularly well suited for educational mathematical graphics.
 
-Possible messages include:
+Advantages include:
 
-- Magnitude doubled
-- Magnitude reduced by half
-- Direction preserved
-- Direction reversed
-- Zero vector produced
+- Precise control over every graphical element
+- Excellent support for Cartesian coordinates
+- Easy animation creation
+- High-quality image export
+- Large community support
 
----
-
-## Stage 6 — Repeat
-
-Repeat the process for multiple scalar values to compare different transformations.
+Its flexibility makes it ideal for building custom vector visualizations.
 
 ---
 
-# 🎨 Design Principles
+# ➡️ Why `quiver()`?
 
-The visualization follows several design principles:
+Vectors are represented using **Matplotlib's `quiver()`** function.
 
-- Smooth animations
-- Consistent color palette
-- Equal axis scaling
-- Clear labels
-- Minimal visual clutter
-- Educational focus
+This function is specifically designed for drawing arrows.
 
----
+It automatically handles:
 
-# 📚 Mathematical Accuracy
+- Arrow direction
+- Arrow length
+- Arrowhead scaling
+- Positioning
 
-The implementation follows the mathematical definition of scalar multiplication.
-
-For a vector
-
-```
-v = (x, y)
-```
-
-and scalar
-
-```
-k
-```
-
-the resulting vector is
-
-```
-(kx, ky)
-```
-
-The visualization preserves this relationship throughout every animation frame.
+Using `quiver()` produces cleaner and more accurate vector graphics than manually drawing lines and arrowheads.
 
 ---
 
-# 💡 Educational Focus
+# 🎨 Why Use Constants?
 
-Rather than simply displaying equations, the project emphasizes intuition through animation.
+Colors, animation settings, axis limits, and other configuration values are defined as constants.
 
-The viewer should immediately recognize:
+For example:
 
-- how vectors grow,
-- how they shrink,
-- when they reverse direction,
-- and why these transformations occur.
+- Background color
+- Vector colors
+- Frame interval
+- Figure size
+- Axis limits
+
+This approach provides several benefits:
+
+- Easier customization
+- Improved readability
+- Consistent styling
+- Reduced duplication
+
+Instead of searching through the code for individual values, everything can be adjusted from a central location.
 
 ---
 
-# 🚀 Future Improvements
+# 🧩 Why Helper Functions?
 
-Possible future enhancements include:
+The project separates repeated tasks into helper functions.
 
-- Interactive scalar slider
+Typical responsibilities include:
+
+- Drawing vectors
+- Updating labels
+- Creating text
+- Resetting the scene
+- Formatting equations
+
+This improves:
+
+- Readability
+- Reusability
+- Maintainability
+- Testing
+
+Keeping functions focused on a single responsibility also makes future improvements much easier.
+
+---
+
+# 🗂 Why Separate Logic from Visualization?
+
+The project keeps mathematical computation independent from rendering.
+
+The mathematical layer computes the scaled vector.
+
+The visualization layer is responsible only for displaying the result.
+
+This separation makes the implementation easier to understand and prevents graphical code from becoming mixed with mathematical logic.
+
+---
+
+# 🎬 Animation Pipeline
+
+Each animation frame follows the same sequence.
+
+```text
+Start Frame
+      │
+      ▼
+Read Current Scalar
+      │
+      ▼
+Compute Scaled Vector
+      │
+      ▼
+Update Vector Graphics
+      │
+      ▼
+Update Equation
+      │
+      ▼
+Update Informational Text
+      │
+      ▼
+Redraw Figure
+      │
+      ▼
+Next Frame
+```
+
+This predictable workflow ensures smooth and consistent animation.
+
+---
+
+# 🖼 Rendering Pipeline
+
+Rendering is performed in several stages.
+
+```text
+Create Figure
+      │
+      ▼
+Configure Axes
+      │
+      ▼
+Draw Grid
+      │
+      ▼
+Draw Original Vector
+      │
+      ▼
+Draw Scaled Vector
+      │
+      ▼
+Render Labels
+      │
+      ▼
+Render Equation
+      │
+      ▼
+Display Frame
+```
+
+Separating rendering from computation keeps the graphical components organized.
+
+---
+
+# 🎨 Visual Design Decisions
+
+Several design choices improve the educational value of the animation.
+
+### Dark Background
+
+A dark theme increases contrast and makes vectors easier to distinguish.
+
+---
+
+### Consistent Color Palette
+
+Each visual element has a dedicated color.
+
+For example:
+
+- Original vector
+- Scaled vector
+- Helper lines
+- Text annotations
+
+Consistent colors help viewers quickly identify each component.
+
+---
+
+### Equal Axis Scaling
+
+The x-axis and y-axis use the same scale.
+
+Without equal scaling, vectors could appear stretched or compressed, giving a misleading representation of their true magnitude and direction.
+
+---
+
+### Smooth Animation
+
+Instead of instantly replacing one vector with another, the vector transitions smoothly between states.
+
+This allows viewers to observe the transformation as it happens, reinforcing the concept of scalar multiplication.
+
+---
+
+# 📈 Performance Considerations
+
+The visualization is intentionally lightweight.
+
+Key optimizations include:
+
+- Reusing graphical objects instead of recreating them
+- Updating only the necessary elements each frame
+- Keeping calculations simple
+- Minimizing unnecessary redraw operations
+
+These choices improve rendering performance while maintaining clean code.
+
+---
+
+# 🔮 Extensibility
+
+The current implementation is designed to support future enhancements with minimal changes.
+
+Potential extensions include:
+
+- Interactive scalar input
 - User-defined vectors
-- Dynamic magnitude display
-- Angle visualization
-- 3D scalar multiplication
-- Interactive notebook version
-- Web-based visualization using Plotly
+- Multiple simultaneous vectors
+- 3D visualizations
+- Matrix transformations
+- Interactive controls
+- Export to additional formats
+
+The modular architecture makes these features straightforward to integrate.
+
+---
+
+# ✅ Summary
+
+The implementation combines **NumPy** for mathematical computation and **Matplotlib** for visualization, with a modular structure that separates configuration, computation, animation, and rendering.
+
+By emphasizing readability, maintainability, and mathematical accuracy, the project provides a strong foundation for both learning and extending Linear Algebra visualizations.
