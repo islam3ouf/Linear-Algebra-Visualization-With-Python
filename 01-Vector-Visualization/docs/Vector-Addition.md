@@ -74,7 +74,7 @@ Each coordinate is added independently.
 - Add the **y-components** together.
 
 <p align="center">
-    <img src="assets/vector-addition-formula.svg" width="700">
+    <img src="assets/vector-addition-formula.png" width="700">
 </p>
 
 ---
@@ -89,7 +89,7 @@ Consider the vectors
 Applying the vector addition formula gives
 
 <p align="center">
-    <img src="assets/vector-addition-example.svg" width="900">
+    <img src="assets/vector-addition-example.png" width="900">
 </p>
 
 The resultant vector is
