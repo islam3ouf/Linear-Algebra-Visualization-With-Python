@@ -1,9 +1,11 @@
 # ➕ Vector Addition
 
-Vector addition is one of the most fundamental operations in Linear Algebra.  
+Vector addition is one of the most fundamental operations in Linear Algebra.
+
 It allows us to combine two or more vectors into a single vector that represents their overall effect.
 
 Think of a vector as a movement:
+
 - Move according to the first vector.
 - Then move according to the second vector.
 - The final position is represented by the **resultant vector**.
@@ -20,11 +22,19 @@ Instead, we combine their directions and displacements to obtain a new vector.
 
 If
 
-\[
-\mathbf{u}=\begin{bmatrix}x_1\\y_1\end{bmatrix},
+$$
+\mathbf{u}=
+\begin{bmatrix}
+x_1\\
+y_1
+\end{bmatrix},
 \qquad
-\mathbf{v}=\begin{bmatrix}x_2\\y_2\end{bmatrix}
-\]
+\mathbf{v}=
+\begin{bmatrix}
+x_2\\
+y_2
+\end{bmatrix}
+$$
 
 their sum is another vector that starts at the origin and ends at the combined displacement.
 
@@ -61,9 +71,9 @@ Draw a new vector from the origin to the final endpoint.
 
 This new vector is
 
-\[
+$$
 \boxed{\mathbf{u}+\mathbf{v}}
-\]
+$$
 
 It represents the total displacement after both movements.
 
@@ -95,13 +105,24 @@ Although the construction is different, the result is **exactly the same** as th
 
 Vector addition is performed **component by component**.
 
-\[
+$$
 \boxed{
-(x_1,y_1)+(x_2,y_2)
+\begin{bmatrix}
+x_1\\
+y_1
+\end{bmatrix}
++
+\begin{bmatrix}
+x_2\\
+y_2
+\end{bmatrix}
 =
-(x_1+x_2,\;y_1+y_2)
+\begin{bmatrix}
+x_1+x_2\\
+y_1+y_2
+\end{bmatrix}
 }
-\]
+$$
 
 Each coordinate is added independently.
 
@@ -114,35 +135,61 @@ Each coordinate is added independently.
 
 Let
 
-\[
-\mathbf{u}=(2,3)
-\]
-
-and
-
-\[
-\mathbf{v}=(3,1)
-\]
+$$
+\mathbf{u}=
+\begin{bmatrix}
+2\\
+3
+\end{bmatrix},
+\qquad
+\mathbf{v}=
+\begin{bmatrix}
+3\\
+1
+\end{bmatrix}
+$$
 
 Add the corresponding components.
 
-\[
-(2,3)+(3,1)
-\]
+$$
+\mathbf{u}+\mathbf{v}
+=
+\begin{bmatrix}
+2\\
+3
+\end{bmatrix}
++
+\begin{bmatrix}
+3\\
+1
+\end{bmatrix}
+$$
 
-\[
-=(2+3,\;3+1)
-\]
-
-\[
-=\boxed{(5,4)}
-\]
+$$
+=
+\begin{bmatrix}
+2+3\\
+3+1
+\end{bmatrix}
+=
+\boxed{
+\begin{bmatrix}
+5\\
+4
+\end{bmatrix}
+}
+$$
 
 So the resultant vector is
 
-\[
-\boxed{(5,4)}
-\]
+$$
+\boxed{
+\begin{bmatrix}
+5\\
+4
+\end{bmatrix}
+}
+$$
 
 ---
 
@@ -154,8 +201,8 @@ When two vectors start from the same point, they create two adjacent sides of a 
 
 The diagonal connects:
 
-- the **starting point**, and
-- the **combined endpoint** reached by following both vectors.
+- the **starting point**
+- the **combined endpoint** reached by following both vectors
 
 Following vector **u** and then vector **v** leads to exactly the same destination as following the diagonal.
 
@@ -178,16 +225,25 @@ The diagonal is not just a convenient drawing—it is the unique vector that rep
 - The **Tail-to-Head Rule** provides an intuitive construction.
 - The **Parallelogram Rule** gives the same result geometrically.
 - The resultant vector always represents the overall movement.
-- For
+- The sum
 
-\[
-(2,3)+(3,1)
-\]
+$$
+\begin{bmatrix}
+2\\
+3
+\end{bmatrix}
++
+\begin{bmatrix}
+3\\
+1
+\end{bmatrix}
+=
+\boxed{
+\begin{bmatrix}
+5\\
+4
+\end{bmatrix}
+}
+$$
 
-the answer is
-
-\[
-\boxed{(5,4)}
-\]
-
-because each coordinate is added separately and the resulting vector points directly to the final position.
+is obtained by adding the corresponding components, producing the vector that points directly to the final position.
