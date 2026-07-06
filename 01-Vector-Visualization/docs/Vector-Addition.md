@@ -100,66 +100,21 @@ Although the construction is different, it produces exactly the same result as t
 ---
 
 🧮 Formula
+## 🧮 Formula
 
-Vector addition is performed component by component.
+Vector addition is performed **component by component**.
 
-Each coordinate is added independently.
+<p align="center">
+  <img src="assets/vector-addition-formula.svg" width="500">
+</p>
 
-- Add the x-components together.
-- Add the y-components together.
+---
 
-Let
+## ✅ Example
 
-$$
-\mathbf{u}=
-\begin{bmatrix}
-x_1\
-y_1
-\end{bmatrix},
-\qquad
-\mathbf{v}=
-\begin{bmatrix}
-x_2\
-y_2
-\end{bmatrix}
-$$
-
-Then
-
-$$
-\mathbf{u}+\mathbf{v}
-
-\begin{bmatrix}
-x_1\
-y_1
-\end{bmatrix}
-+
-\begin{bmatrix}
-x_2\
-y_2
-\end{bmatrix}
-$$
-
-$$
-
-\begin{bmatrix}
-x_1+x_2\
-y_1+y_2
-\end{bmatrix}
-$$
-
-Therefore,
-
-$$
-\boxed{
-\mathbf{u}+\mathbf{v}
-
-\begin{bmatrix}
-x_1+x_2\
-y_1+y_2
-\end{bmatrix}
-}
-$$
+<p align="center">
+  <img src="assets/vector-addition-example.svg" width="450">
+</p>
 
 ---
 
