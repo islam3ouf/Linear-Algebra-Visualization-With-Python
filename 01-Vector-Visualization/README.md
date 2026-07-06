@@ -1,65 +1,144 @@
 # 🧮 Vector Visualization
 
 <p align="center">
-  <img src="animations/vector_operations.gif" alt="Vector Operations Animation" width="850">
+
+<img src="assets/animations/vector_operations.gif" alt="Vector Operations Animation" width="900">
+
 </p>
 
 <p align="center">
 
-Visualizing the fundamental concepts of <strong>Linear Algebra</strong> through high-quality Python animations and static illustrations.
-
-Built with <strong>Python</strong>, <strong>NumPy</strong>, and <strong>Matplotlib</strong> as part of the <strong>Linear Algebra Visualization with Python</strong> project.
+<strong>Visualizing the Foundations of Linear Algebra with Python</strong>
 
 </p>
+
+<p align="center">
+
+Interactive static and animated visualizations of vector operations built using <strong>Python</strong>, <strong>NumPy</strong>, and <strong>Matplotlib</strong>.
+
+Part of the <strong>Linear Algebra Visualization with Python</strong> project inspired by the legendary <strong>3Blue1Brown – Essence of Linear Algebra</strong> series.
+
+</p>
+
+---
+
+## 📑 Quick Navigation
+
+- [📖 About](#-about)
+- [💭 Why This Project?](#-why-this-project)
+- [👥 Who Is This Project For?](#-who-is-this-project-for)
+- [🎯 Project Goals](#-project-goals)
+- [🔑 Key Takeaways](#-key-takeaways)
+- [📸 Preview](#-preview)
+- [✨ Features](#-features)
+- [🧠 Mathematical Background](#-mathematical-background)
+- [⚙️ How It Works](#️-how-it-works)
+- [🚀 Getting Started](#-getting-started)
+- [📚 Learning Outcomes](#-learning-outcomes)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
 ---
 
 # 📖 About
 
-Vectors are one of the most fundamental building blocks of Linear Algebra.
+Vectors are the foundation of Linear Algebra.
 
-They are used to represent quantities that have both **magnitude** and **direction**, making them essential in mathematics, physics, engineering, robotics, computer graphics, computer vision, and modern Artificial Intelligence.
+Almost every advanced topic—including matrices, linear transformations, eigenvalues, machine learning, computer graphics, robotics, and computer vision—builds upon a solid understanding of vectors.
 
-This project transforms these abstract mathematical ideas into intuitive visualizations that make learning significantly easier.
+Rather than presenting mathematical formulas alone, this project focuses on **visual intuition**.
 
-Instead of memorizing formulas, you'll **see** how vectors behave, how they combine, and how scaling changes both their length and direction.
+Every operation is illustrated using carefully designed static figures and smooth animations, helping learners understand **what vectors actually do**, not just how to compute them.
+
+The project currently demonstrates two essential vector operations:
+
+- ➕ Vector Addition
+- ✖️ Scalar Multiplication
+
+Each concept is available as both a **static visualization** and an **animated visualization**, allowing learners to connect mathematical theory with graphical interpretation.
+
+---
+
+# 💭 Why This Project?
+
+Learning Linear Algebra can be difficult because many concepts are introduced only through equations and symbolic notation.
+
+This project takes a different approach.
+
+Instead of memorizing formulas, you can **watch vectors move**, combine, and scale on the Cartesian plane.
+
+The goal is to build intuition first, making future topics such as matrix transformations, eigenvectors, and machine learning significantly easier to understand.
+
+---
+
+# 👥 Who Is This Project For?
+
+This project is designed for anyone interested in learning Linear Algebra visually.
+
+It is especially useful for:
+
+- 🎓 Students studying Linear Algebra
+- 🐍 Python learners
+- 📊 Data Science enthusiasts
+- 🤖 Machine Learning beginners
+- 🧠 Artificial Intelligence learners
+- 💻 Computer Science students
+- 🎮 Computer Graphics developers
+- 🚀 Anyone who prefers visual explanations over memorizing equations
+
+No previous experience with visualization libraries is required.
 
 ---
 
 # 🎯 Project Goals
 
-The objective of this project is to build a strong geometric intuition for vectors through visualization.
+This project aims to build a strong geometric intuition for vectors through interactive visualization.
 
-By the end of this project, you will understand how to:
+By completing this project, you will learn how to:
 
-- Represent vectors on the Cartesian plane.
+- Represent vectors in two-dimensional space.
 - Interpret vector components.
 - Visualize vector addition geometrically.
 - Understand the Tail-to-Head Rule.
 - Understand the Parallelogram Rule.
 - Perform scalar multiplication.
-- Relate mathematical equations to graphical representations.
+- Connect mathematical formulas with graphical representations.
+- Build a strong foundation for more advanced Linear Algebra topics.
+
+---
+
+# 🔑 Key Takeaways
+
+After exploring this project, you should be able to:
+
+- Think about vectors geometrically instead of symbolically.
+- Understand how vector addition works visually.
+- See how scalar multiplication affects magnitude and direction.
+- Read vector coordinates naturally.
+- Build intuition before studying matrices and transformations.
 
 ---
 
 # 🌍 Real-World Applications
 
-Vector operations appear everywhere in science and engineering.
+Vectors are used extensively across science and engineering.
 
 Some common applications include:
 
 - 🤖 Robotics
 - 🚗 Autonomous Vehicles
-- 🎮 Game Development
 - 🛰 Navigation Systems
+- 🗺 GPS Localization
 - 🖥 Computer Graphics
 - 👁 Computer Vision
+- 🎮 Game Development
 - 📊 Data Science
 - 🧠 Machine Learning
 - 📡 Signal Processing
 - ⚙ Physics Simulations
+- 🚀 Aerospace Engineering
 
-Understanding vectors is the first step toward mastering these fields.
+Understanding vectors is the first step toward mastering all of these fields.
 
 ---
 
@@ -68,83 +147,105 @@ Understanding vectors is the first step toward mastering these fields.
 ## 🎬 Animated Visualization
 
 <p align="center">
-<img src="animations/vector_operations.gif" width="850">
+
+<img src="assets/animations/vector_operations.gif" width="900">
+
 </p>
 
-The animation demonstrates vector operations step by step, making the mathematical process easy to follow visually.
+The animation explains vector operations step by step, making every transformation easy to understand through motion rather than static equations.
 
 ---
 
 ## 📷 Static Visualization
 
 <p align="center">
-<img src="images/static_vector_visualization.png" width="850">
+
+<img src="assets/images/static_vector_visualization.png" width="900">
+
 </p>
 
-The static figure summarizes the final geometric relationships between all vectors.
-
----
+The static visualization summarizes the complete geometric relationship between the vectors, providing a clear reference for study and documentation.
 
 # ✨ Features
 
 ## 📊 Static Visualization
 
+The static implementation provides a publication-quality figure that clearly illustrates the geometry of vector operations.
+
+Features include:
+
 - Clean Cartesian coordinate system
 - Professional grid layout
 - High-quality vector rendering
-- Tail-to-Head visualization
-- Parallelogram construction
-- Vector labels
+- Color-coded vectors
+- Tail-to-Head construction
+- Parallelogram Rule visualization
+- Vector labels and annotations
 - Magnitude comparison
-- Publication-quality figure
-- Dark theme styling
+- High-resolution image export
+- Professional dark theme
 
 ---
 
 ## 🎬 Animated Visualization
 
-- Smooth vector drawing animation
-- Progressive construction of vectors
-- Step-by-step explanation
-- Animated Tail-to-Head Rule
-- Animated Parallelogram Rule
+The animated implementation explains each mathematical operation progressively.
+
+Features include:
+
+- Smooth vector drawing
+- Step-by-step educational animation
+- Progressive vector construction
+- Tail-to-Head animation
+- Parallelogram Rule animation
 - Scalar multiplication demonstration
 - Dynamic annotations
 - Smooth transitions
-- Automatic GIF export
-- Educational presentation style
-- ---
+- Automatic GIF generation
+- High-quality animation export
+
+---
 
 # 🧠 Mathematical Background
 
-A **vector** is a mathematical object that possesses both **magnitude** (length) and **direction**.
+A **vector** is a mathematical object that describes both **magnitude** (length) and **direction**.
 
-Unlike ordinary numbers (scalars), vectors describe movement, displacement, force, velocity, and many other physical and computational quantities.
+Unlike scalars, which represent only numerical values, vectors describe movement and direction, making them fundamental in mathematics, physics, engineering, robotics, and Artificial Intelligence.
 
-In a two-dimensional Cartesian coordinate system, a vector is commonly written as
+In a two-dimensional Cartesian coordinate system, a vector can be represented as
 
-\[
-\mathbf{v} = (x,\;y)
-\]
+```text
+v = (x, y)
+```
 
-where:
+where
 
 - **x** represents the horizontal component.
 - **y** represents the vertical component.
 
-Graphically, a vector is drawn as an arrow starting from the origin (or another point) and ending at its coordinates.
+Graphically, the vector is drawn as an arrow starting at the origin and ending at the point `(x, y)`.
 
 ---
 
 # 📐 Mathematical Formulas
 
+## Vector Representation
+
+```text
+      ⎡ x ⎤
+v  =  ⎢   ⎥
+      ⎣ y ⎦
+```
+
+---
+
 ## Vector Magnitude
 
-The length (or magnitude) of a vector is
+The magnitude (or length) of a vector is calculated using the Euclidean distance formula.
 
-\[
-||\mathbf{v}||=\sqrt{x^2+y^2}
-\]
+```text
+‖v‖ = √(x² + y²)
+```
 
 ---
 
@@ -152,25 +253,24 @@ The length (or magnitude) of a vector is
 
 Given two vectors
 
-\[
-\mathbf{u}=(x_1,y_1)
-\]
+```text
+u = (x₁, y₁)
 
-and
-
-\[
-\mathbf{v}=(x_2,y_2)
-\]
+v = (x₂, y₂)
+```
 
 their sum is
 
-\[
-\mathbf{u}+\mathbf{v}
-=
-(x_1+x_2,\;y_1+y_2)
-\]
+```text
+u + v = (x₁ + x₂, y₁ + y₂)
+```
 
-This operation is visualized using both the **Tail-to-Head Rule** and the **Parallelogram Rule**.
+This project demonstrates this operation using both:
+
+- Tail-to-Head Rule
+- Parallelogram Rule
+
+allowing learners to understand the geometric interpretation of vector addition.
 
 ---
 
@@ -178,89 +278,72 @@ This operation is visualized using both the **Tail-to-Head Rule** and the **Para
 
 Multiplying a vector by a scalar changes its magnitude while preserving (or reversing) its direction.
 
-\[
-k\mathbf{v}
-=
-(kx,\;ky)
-\]
+```text
+k · v = (kx, ky)
+```
 
 where
 
-- \(k>1\) stretches the vector.
-- \(0<k<1\) shrinks the vector.
-- \(k<0\) reverses its direction.
+- **k > 1** stretches the vector.
+- **0 < k < 1** shrinks the vector.
+- **k = 0** produces the zero vector.
+- **k < 0** reverses the vector's direction.
 
 ---
 
 # 🎓 Concepts Covered
 
-This project introduces the following fundamental Linear Algebra concepts:
+This project introduces several fundamental concepts in Linear Algebra, including:
 
 - Cartesian Coordinate System
 - Position Vectors
 - Vector Components
-- Magnitude
-- Direction
+- Vector Magnitude
+- Vector Direction
 - Vector Addition
 - Tail-to-Head Rule
 - Parallelogram Rule
 - Scalar Multiplication
 - Coordinate Geometry
 
-These concepts provide the mathematical foundation for all subsequent projects in this repository.
+These ideas form the mathematical foundation for every project that follows in this repository.
 
 ---
 
 # ⚙️ How It Works
 
-The visualization is generated through a sequence of educational steps.
+The project is divided into two independent implementations.
 
-### Static Visualization
+## 📊 Static Visualization
+
+The static version follows these steps:
 
 1. Create the Cartesian coordinate system.
 2. Draw the coordinate axes.
 3. Plot the original vectors.
-4. Display vector labels.
+4. Display labels and annotations.
 5. Demonstrate vector addition.
-6. Draw the resulting vector.
-7. Illustrate scalar multiplication.
-8. Render the final publication-quality figure.
+6. Construct the parallelogram.
+7. Visualize scalar multiplication.
+8. Export a high-quality image.
 
 ---
 
-### Animated Visualization
+## 🎬 Animated Visualization
 
-The animation presents the concepts progressively.
+The animation explains the concepts progressively.
 
 1. Draw the coordinate plane.
 2. Display the first vector.
 3. Display the second vector.
 4. Animate vector addition.
-5. Show the Tail-to-Head construction.
+5. Show the Tail-to-Head Rule.
 6. Construct the Parallelogram Rule.
 7. Animate scalar multiplication.
 8. Display the final result.
 9. Export the animation as a GIF.
 
-Each animation step is designed to explain the mathematical idea rather than simply display graphics.
-
----
-
-# 🏗 Code Architecture
-
-The project is organized into two independent implementations.
-
-## Static Visualization
-
-Generates a high-quality figure suitable for documentation, presentations, and educational materials.
-
----
-
-## Animated Visualization
-
-Creates an animated demonstration illustrating vector operations step by step and exports the result as a GIF.
-
-Both implementations share the same mathematical concepts while serving different educational purposes.
+Every animation step is designed to teach the mathematical intuition behind the operation—not simply display graphics.
 
 ---
 
@@ -269,7 +352,7 @@ Both implementations share the same mathematical concepts while serving differen
 | Technology | Purpose |
 |------------|---------|
 | Python | Core programming language |
-| NumPy | Vector and numerical computations |
+| NumPy | Numerical and vector computations |
 | Matplotlib | Static and animated visualizations |
 | Pillow | GIF generation and export |
 
@@ -280,27 +363,33 @@ Both implementations share the same mathematical concepts while serving differen
 ```text
 01-Vector-Visualization/
 │
-├── README.md
-├── requirements.txt
+├── assets/
+│   ├── images/
+│   │   └── static_vector_visualization.png
+│   │
+│   └── animations/
+│       └── vector_operations.gif
 │
-├── static_vector_visualization.py
-├── animated_vector_visualization.py
+├── docs/
 │
 ├── notebooks/
 │   ├── static_vector_visualization.ipynb
 │   └── animated_vector_visualization.ipynb
 │
-├── images/
-│   └── static_vector_visualization.png
-│
-└── animations/
-    └── vector_operations.gif
+├── README.md
+├── requirements.txt
+├── static_vector_operations.py
+└── animated_vector_operations.py
 ```
----
 
+The project structure is designed to keep source code, visual assets, notebooks, and documentation organized and easy to navigate.
+
+---
 # 🚀 Getting Started
 
-Follow these steps to run the project on your local machine.
+Follow the steps below to set up and run the project on your local machine.
+
+---
 
 ## 1️⃣ Clone the Repository
 
@@ -310,7 +399,7 @@ git clone https://github.com/islam3ouf/Linear-Algebra-Visualization-With-Python.
 
 ---
 
-## 2️⃣ Navigate to the Project
+## 2️⃣ Navigate to the Project Directory
 
 ```bash
 cd Linear-Algebra-Visualization-With-Python/01-Vector-Visualization
@@ -318,7 +407,9 @@ cd Linear-Algebra-Visualization-With-Python/01-Vector-Visualization
 
 ---
 
-## 3️⃣ Install the Required Packages
+## 3️⃣ Install Dependencies
+
+Install all required packages using:
 
 ```bash
 pip install -r requirements.txt
@@ -328,13 +419,15 @@ pip install -r requirements.txt
 
 # 📦 Requirements
 
-The project depends on the following Python libraries:
+This project relies on a small number of widely used scientific Python libraries.
 
-- NumPy
-- Matplotlib
-- Pillow
+| Package | Purpose |
+|---------|---------|
+| NumPy | Vector mathematics and numerical computation |
+| Matplotlib | Static and animated visualizations |
+| Pillow | GIF creation and export |
 
-or simply install everything using
+or simply run
 
 ```bash
 pip install -r requirements.txt
@@ -344,51 +437,68 @@ pip install -r requirements.txt
 
 # ▶️ Running the Project
 
-## Static Visualization
-
-```bash
-python static_vector_visualization.py
-```
-
-This script generates a high-quality static visualization illustrating vector addition and scalar multiplication.
+This project contains two independent implementations.
 
 ---
 
-## Animated Visualization
+## 📊 Static Visualization
+
+Generate a high-quality static illustration.
 
 ```bash
-python animated_vector_visualization.py
+python static_vector_operations.py
 ```
 
-Running this script creates an animated explanation of the vector operations and automatically exports
+The generated figure demonstrates:
+
+- Cartesian coordinate system
+- Vector representation
+- Vector addition
+- Tail-to-Head Rule
+- Parallelogram Rule
+- Scalar multiplication
+
+---
+
+## 🎬 Animated Visualization
+
+Generate the educational animation.
+
+```bash
+python animated_vector_operations.py
+```
+
+After execution, the project automatically exports
 
 ```text
-vector_operations.gif
+assets/animations/vector_operations.gif
 ```
 
-inside the `animations/` directory.
+The animation progressively explains every mathematical step while keeping the visualization smooth and easy to follow.
 
 ---
 
 # 📈 Expected Output
 
-After running the project, you should obtain:
+Running both scripts will generate:
 
-✅ A high-quality static figure
+✅ High-quality static visualization
 
-✅ A smooth educational animation
+✅ Animated vector operations
 
 ✅ Automatic GIF export
 
 ✅ Clearly labeled vectors
 
-✅ Coordinate grid
+✅ Cartesian coordinate system
 
 ✅ Tail-to-Head construction
 
-✅ Parallelogram Rule visualization
+✅ Parallelogram Rule illustration
 
 ✅ Scalar multiplication demonstration
+
+These outputs are designed for learning, presentations, documentation, and educational content.
 
 ---
 
@@ -396,113 +506,153 @@ After running the project, you should obtain:
 
 After completing this project, you will be able to:
 
-- Understand what a vector represents.
-- Read vector components correctly.
-- Interpret magnitude and direction.
-- Perform vector addition graphically.
+- Understand what vectors represent.
+- Read vector coordinates confidently.
+- Interpret vector magnitude and direction.
+- Perform vector addition geometrically.
 - Apply the Tail-to-Head Rule.
 - Apply the Parallelogram Rule.
 - Understand scalar multiplication visually.
-- Connect mathematical equations with graphical representations.
-- Create vector visualizations using Python.
-- Build a strong geometric intuition for future Linear Algebra topics.
+- Connect mathematical equations with graphical intuition.
+- Build vector visualizations using Python.
+- Prepare for more advanced Linear Algebra concepts.
 
 ---
 
 # 💡 Future Improvements
 
-The following enhancements are planned for future versions:
+This project will continue evolving over time.
+
+Possible future enhancements include:
 
 - Interactive vector manipulation
 - User-defined vectors
 - Real-time animations
-- Vector decomposition
+- Magnitude visualization
 - Angle visualization
-- Magnitude animation
-- Dot product visualization
-- Cross product visualization
-- 3D vector support
+- Vector decomposition
+- Dot Product visualization
+- Cross Product visualization
+- Three-dimensional vectors
 - Plotly interactive version
+- GUI application
+- Performance optimizations
 
-These improvements will gradually expand the project into a comprehensive visual learning tool.
+The long-term goal is to create a complete visual toolkit for learning Linear Algebra.
 
 ---
 
 # 🔗 Related Projects
 
-This project is the first step in the **Linear Algebra Visualization with Python** series.
+This project is the first chapter of the **Linear Algebra Visualization with Python** series.
 
-The next projects include:
+Upcoming projects include:
 
-- 🚧 Linear Combinations, Span & Basis
-- ⏳ Matrix Transformations
-- ⏳ Matrix Multiplication
-- ⏳ Dot Product
-- ⏳ Cross Product
-- ⏳ Determinants
-- ⏳ Eigenvalues & Eigenvectors
-- ⏳ Singular Value Decomposition (SVD)
-- ⏳ Principal Component Analysis (PCA)
+| Project | Status |
+|---------|--------|
+| 01 • Vector Visualization | ✅ Completed |
+| 02 • Linear Combinations, Span & Basis | 🚧 In Progress |
+| 03 • Matrix Transformations | ⏳ Planned |
+| 04 • Matrix Multiplication | ⏳ Planned |
+| 05 • Dot Product | ⏳ Planned |
+| 06 • Cross Product | ⏳ Planned |
+| 07 • Determinants | ⏳ Planned |
+| 08 • Eigenvalues & Eigenvectors | ⏳ Planned |
+| 09 • Singular Value Decomposition (SVD) | ⏳ Planned |
+| 10 • Principal Component Analysis (PCA) | ⏳ Planned |
 
-For the complete roadmap, see **ROADMAP.md** in the repository.
+For the complete learning path, see **ROADMAP.md** in the main repository.
 
 ---
 
 # 📖 References
 
-The mathematical concepts and visual inspiration for this project are based on well-known educational resources.
+The mathematical concepts presented in this project are based on widely respected educational resources.
 
-### Books
+## Books
 
-- Introduction to Linear Algebra — Gilbert Strang
-- Linear Algebra Done Right — Sheldon Axler
+- *Introduction to Linear Algebra* — Gilbert Strang
+- *Linear Algebra Done Right* — Sheldon Axler
 
-### Courses
+---
 
-- MIT OpenCourseWare – Linear Algebra
+## Courses
 
-### Inspiration
+- MIT OpenCourseWare — Linear Algebra
 
-- 3Blue1Brown — Essence of Linear Algebra
+---
 
-### Documentation
+## Documentation
 
 - NumPy Documentation
 - Matplotlib Documentation
-- ---
 
+---
+
+## Inspiration
+
+This project is independently inspired by the outstanding educational series:
+
+**3Blue1Brown — Essence of Linear Algebra**
+
+Its visual teaching style motivated the creation of these educational Python visualizations.
+
+This repository is an independent educational project and is **not affiliated with or endorsed by 3Blue1Brown**.
+
+---
 # 🤝 Contributing
 
-Contributions are always welcome and greatly appreciated.
+Contributions are always welcome and highly appreciated.
 
-Whether you're fixing a bug, improving the documentation, optimizing the code, or suggesting a new visualization, every contribution helps make this repository a better learning resource.
+Whether you're fixing a bug, improving the documentation, optimizing the code, or proposing a new visualization, every contribution helps make this repository a better educational resource for the community.
 
-If you'd like to contribute:
+If you'd like to contribute, simply follow these steps:
 
 1. Fork the repository.
-2. Create a new branch.
+2. Create a new feature branch.
 3. Make your changes.
-4. Test your code.
-5. Commit your changes with a clear message.
-6. Open a Pull Request.
+4. Test your implementation.
+5. Commit your changes with a meaningful commit message.
+6. Push your branch.
+7. Open a Pull Request.
 
-For more details, please read the **CONTRIBUTING.md** guide.
+Please make sure your code is well documented, follows the existing project structure, and includes clear explanations whenever appropriate.
+
+For detailed contribution guidelines, please read **CONTRIBUTING.md**.
 
 ---
 
 # 📌 Project Status
 
-🟢 **Completed**
+**Current Status:** ✅ Completed
 
-This project is considered complete and serves as the foundation for the entire **Linear Algebra Visualization with Python** series.
+This project serves as the foundation of the **Linear Algebra Visualization with Python** series.
 
-Future updates may include:
+Although the core objectives have been completed, future updates may include:
 
-- Code optimization
 - Interactive visualizations
-- Additional mathematical explanations
-- Performance improvements
 - Better animations
+- Code optimization
+- Improved mathematical explanations
+- Additional educational examples
+- Performance improvements
+- Enhanced documentation
+
+The project will continue evolving alongside the rest of the repository.
+
+---
+
+# 🌟 Repository Goals
+
+The long-term vision of this repository is to become a comprehensive visual reference for Linear Algebra using Python.
+
+Every project in the series follows the same philosophy:
+
+- Build mathematical intuition first.
+- Explain concepts visually.
+- Write clean, readable Python code.
+- Create reusable educational resources.
+- Connect mathematics with real-world applications.
 
 ---
 
@@ -510,31 +660,36 @@ Future updates may include:
 
 This project is licensed under the **MIT License**.
 
-You are free to use, modify, and distribute the code in accordance with the terms of the license.
+You are welcome to use, modify, distribute, and build upon this work under the terms of the license.
 
-See the **LICENSE** file for more information.
+For complete license information, see the **LICENSE** file.
 
 ---
 
 # ⭐ Support
 
-If you found this project useful and enjoyed the visual approach to learning Linear Algebra, consider giving the repository a ⭐ on GitHub.
+If this project helped you better understand Linear Algebra or inspired you to build your own mathematical visualizations, consider giving the repository a ⭐ on GitHub.
 
-Your support motivates the continued development of new visualizations and helps more learners discover the project.
+Your support helps the project reach more learners and encourages the continued development of new visualizations and educational content.
+
+Every star, issue, discussion, and contribution is greatly appreciated.
 
 ---
 
 # 🙏 Acknowledgements
 
-Special thanks to the educators and open-source communities whose work has inspired this project.
+Special thanks to everyone who has contributed to the open-source scientific Python ecosystem.
 
-In particular:
+This project would not have been possible without the incredible educational resources provided by the community.
 
-- **3Blue1Brown** for the outstanding visual approach to mathematics.
-- **Gilbert Strang** for making Linear Algebra accessible to millions of students.
-- The **NumPy** and **Matplotlib** communities for providing powerful scientific computing tools.
+In particular, thanks to:
 
-This project is an independent educational implementation inspired by these resources and is **not affiliated with or endorsed by them**.
+- **3Blue1Brown** for the inspiring visual teaching style presented in the *Essence of Linear Algebra* series.
+- **Gilbert Strang** for his outstanding contributions to Linear Algebra education.
+- The **NumPy** community for making numerical computing simple and powerful.
+- The **Matplotlib** community for providing exceptional visualization tools.
+
+This repository is an independent educational implementation inspired by these resources and is **not affiliated with, sponsored by, or endorsed by any of them**.
 
 ---
 
@@ -542,13 +697,13 @@ This project is an independent educational implementation inspired by these reso
 
 <div align="center">
 
-## Islam Ouff
+## **Islam abo Ouf**
 
-**Python Developer • AI & Machine Learning Enthusiast • Mathematics Visualization**
+**Python Developer • Artificial Intelligence Enthusiast • Machine Learning Learner • Mathematics Visualization Creator**
 
-Building educational visualizations that transform abstract mathematical concepts into intuitive and interactive learning experiences.
+Passionate about transforming abstract mathematical concepts into intuitive, interactive, and visually engaging educational experiences through Python.
 
-Made with ❤️, Python 🐍, and lots of ☕
+Building projects that combine mathematics, programming, and visualization to make learning more accessible for everyone.
 
 </div>
 
@@ -556,8 +711,10 @@ Made with ❤️, Python 🐍, and lots of ☕
 
 <div align="center">
 
-### 🌟 Explore • Learn • Visualize • Share
+### 🚀 Learn • Visualize • Build • Share
 
-*"The best way to understand mathematics is to see it in action."*
+*"Mathematics becomes intuitive when you can see it."*
+
+Made with ❤️, Python 🐍, and countless cups of ☕
 
 </div>
