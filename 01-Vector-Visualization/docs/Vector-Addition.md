@@ -1,257 +1,193 @@
-➕ Vector Addition
+# ➕ Vector Addition
 
-Vector addition is one of the most fundamental operations in Linear Algebra.
-
+Vector addition is one of the most fundamental operations in Linear Algebra.  
 It allows us to combine two or more vectors into a single vector that represents their overall effect.
 
 Think of a vector as a movement:
-
 - Move according to the first vector.
 - Then move according to the second vector.
-- The final position is represented by the resultant vector.
+- The final position is represented by the **resultant vector**.
 
 ---
 
-📖 Geometric Interpretation
+# 📖 Geometric Interpretation
 
-A vector represents both magnitude (length) and direction.
+A vector represents both **magnitude** (length) and **direction**.
 
-Adding vectors does not mean adding their lengths.
+Adding vectors does **not** mean adding their lengths.
 
 Instead, we combine their directions and displacements to obtain a new vector.
 
-Suppose we have two vectors
+If
 
-$$
-\mathbf{u}=
-\begin{bmatrix}
-x_1\
-y_1
-\end{bmatrix},
+\[
+\mathbf{u}=\begin{bmatrix}x_1\\y_1\end{bmatrix},
 \qquad
-\mathbf{v}=
-\begin{bmatrix}
-x_2\
-y_2
-\end{bmatrix}
-$$
+\mathbf{v}=\begin{bmatrix}x_2\\y_2\end{bmatrix}
+\]
 
-Their sum is another vector that starts at the origin and ends at the combined displacement.
+their sum is another vector that starts at the origin and ends at the combined displacement.
 
-Visually, vector addition answers a simple question:
+Visually, vector addition answers the question:
 
-«"Where do I end up after performing both movements?"»
+> **"Where do I end up after performing both movements?"**
 
 ---
 
-📍 Tail-to-Head Rule
+# 📍 Tail-to-Head Rule
 
-The Tail-to-Head Rule is the most intuitive way to add vectors.
+The **Tail-to-Head Rule** is the most intuitive way to add vectors.
 
-Step 1
+### Step 1
 
 Draw the first vector from the origin.
 
+```
 O ─────► u
+```
 
-Step 2
+### Step 2
 
-Move the second vector so that its tail starts exactly where the first vector ends.
+Move the second vector so that **its tail starts exactly where the first vector ends**.
 
+```
 O ─────► u
           ─────► v
+```
 
-Step 3
+### Step 3
 
 Draw a new vector from the origin to the final endpoint.
 
-The resulting vector is
+This new vector is
 
-$$
+\[
 \boxed{\mathbf{u}+\mathbf{v}}
-$$
+\]
 
-It represents the total displacement after completing both movements.
+It represents the total displacement after both movements.
 
 ---
 
-▱ Parallelogram Rule
+# ▱ Parallelogram Rule
 
-Another geometric interpretation is the Parallelogram Rule.
+Another geometric interpretation is the **Parallelogram Rule**.
 
 1. Draw both vectors from the same starting point.
-2. Copy each vector to create a parallelogram.
-3. Draw the diagonal starting from the common origin.
+2. Copy each vector to form a parallelogram.
+3. Draw the diagonal beginning at the origin.
 
+The diagonal is the vector sum.
+
+```
         ●
        /|
       / |
      /  |
     ●---●
+```
 
-The diagonal is the vector sum
-
-$$
-\boxed{\mathbf{u}+\mathbf{v}}
-$$
-
-Although the construction is different, it produces exactly the same result as the Tail-to-Head Rule.
+Although the construction is different, the result is **exactly the same** as the Tail-to-Head Rule.
 
 ---
 
-🧮 Formula
-## 🧮 Formula
+# 🧮 Formula
 
 Vector addition is performed **component by component**.
 
-<p align="center">
-  <img src="assets/vector-addition-formula.svg" width="500">
-</p>
+\[
+\boxed{
+(x_1,y_1)+(x_2,y_2)
+=
+(x_1+x_2,\;y_1+y_2)
+}
+\]
+
+Each coordinate is added independently.
+
+- x-components are added together.
+- y-components are added together.
 
 ---
 
-## ✅ Example
+# ✅ Example
 
-<p align="center">
-  <img src="assets/vector-addition-example.svg" width="450">
-</p>
+Let
 
----
+\[
+\mathbf{u}=(2,3)
+\]
 
-✅ Example
+and
 
-Consider the vectors
-
-$$
-\mathbf{u}=
-\begin{bmatrix}
-2\
-3
-\end{bmatrix},
-\qquad
-\mathbf{v}=
-\begin{bmatrix}
-3\
-1
-\end{bmatrix}
-$$
-
-Apply the vector addition rule.
-
-$$
-\mathbf{u}+\mathbf{v}
-
-\begin{bmatrix}
-2\
-3
-\end{bmatrix}
-+
-\begin{bmatrix}
-3\
-1
-\end{bmatrix}
-$$
+\[
+\mathbf{v}=(3,1)
+\]
 
 Add the corresponding components.
 
-$$
+\[
+(2,3)+(3,1)
+\]
 
-\begin{bmatrix}
-2+3\
-3+1
-\end{bmatrix}
-$$
+\[
+=(2+3,\;3+1)
+\]
 
-Simplify.
+\[
+=\boxed{(5,4)}
+\]
 
-$$
+So the resultant vector is
 
-\begin{bmatrix}
-5\
-4
-\end{bmatrix}
-$$
-
-Therefore,
-
-$$
-\boxed{
-\mathbf{u}+\mathbf{v}
-
-\begin{bmatrix}
-5\
-4
-\end{bmatrix}
-}
-$$
-
-The resultant vector points to the coordinates (5, 4).
+\[
+\boxed{(5,4)}
+\]
 
 ---
 
-❓ Why Is the Result the Diagonal?
+# ❓ Why Is the Result the Diagonal?
 
 This is one of the most beautiful geometric properties of vectors.
 
-When two vectors start from the same point, they naturally form two adjacent sides of a parallelogram.
+When two vectors start from the same point, they create two adjacent sides of a parallelogram.
 
-If you travel along u and then continue along v, you arrive at exactly the same destination reached by moving directly along the diagonal.
+The diagonal connects:
 
-Mathematically,
+- the **starting point**, and
+- the **combined endpoint** reached by following both vectors.
 
-$$
-\boxed{
-\text{Diagonal}
+Following vector **u** and then vector **v** leads to exactly the same destination as following the diagonal.
 
-\mathbf{u}+\mathbf{v}
-}
-$$
+The diagonal therefore represents the **total displacement**, which is precisely the definition of vector addition.
 
-The diagonal therefore represents the combined displacement of both vectors.
+In other words,
 
-It is not simply a convenient line inside the parallelogram—it is the unique vector that describes the effect of applying both vectors together.
+- First movement → **u**
+- Second movement → **v**
+- Combined movement → **u + v**
+
+The diagonal is not just a convenient drawing—it is the unique vector that represents both movements together.
 
 ---
 
-💡 Key Takeaways
+# 💡 Key Takeaways
 
-- Vector addition combines displacements, not lengths.
+- Vector addition combines **displacements**, not lengths.
 - Components are added independently.
-- The Tail-to-Head Rule provides an intuitive geometric construction.
-- The Parallelogram Rule produces exactly the same resultant vector.
-- The resultant vector always represents the overall displacement.
-- In general,
+- The **Tail-to-Head Rule** provides an intuitive construction.
+- The **Parallelogram Rule** gives the same result geometrically.
+- The resultant vector always represents the overall movement.
+- For
 
-$$
-\boxed{
-\mathbf{u}+\mathbf{v}
+\[
+(2,3)+(3,1)
+\]
 
-\begin{bmatrix}
-x_1+x_2\
-y_1+y_2
-\end{bmatrix}
-}
-$$
+the answer is
 
-- For this example,
+\[
+\boxed{(5,4)}
+\]
 
-$$
-\boxed{
-\begin{bmatrix}
-2\
-3
-\end{bmatrix}
-+
-\begin{bmatrix}
-3\
-1
-\end{bmatrix}
-
-\begin{bmatrix}
-5\
-4
-\end{bmatrix}
-}
-$$
-
-The result is the vector that points directly from the origin to the final position after both movements.
+because each coordinate is added separately and the resulting vector points directly to the final position.
