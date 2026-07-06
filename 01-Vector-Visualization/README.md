@@ -365,7 +365,7 @@ Every animation step is designed to teach the mathematical intuition behind the 
 │
 ├── assets/
 │   ├── images/
-│   │   └── static_vector_visualization.png
+│   │   └── static_vector_operations.png
 │   │
 │   └── animations/
 │       └── vector_operations.gif
@@ -373,8 +373,8 @@ Every animation step is designed to teach the mathematical intuition behind the 
 ├── docs/
 │
 ├── notebooks/
-│   ├── static_vector_visualization.ipynb
-│   └── animated_vector_visualization.ipynb
+│   ├── static_vector_operations.ipynb
+│   └── animated_vector_operations.ipynb
 │
 ├── README.md
 ├── requirements.txt
